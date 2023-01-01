@@ -1,0 +1,200 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>BYT</title>
+</head>
+<body>
+<body onload="document.getElementById('demo').innerHTML = Date()" color=#ff6699;>
+
+<header class="header">
+
+    <a href="file:///C:/Users/SOLOMON/Desktop/byt%203/BYT/byt3.html" class="logo"> <img src="My project.png" class="pic"> </a>
+	<button type"button" onload="document.getElementById('demo').innerHTML = Date()" = color=#ff6699; >Date/Time</button>
+	<p id="demo"></p>
+
+    <nav class="navbar">
+        <a href="file:///C:/Users/SOLOMON/Desktop/byt%203/BYT/byt3.html">home</a>
+        <a href="file:///C:/Users/SOLOMON/Desktop/byt%203/BYT/aboutbyt.html">about</a>
+        <a href="file:///C:/Users/SOLOMON/Desktop/byt%203/BYT/shop.html">shop</a>
+        <a href="file:///C:/Users/SOLOMON/Desktop/byt%203/BYT/contact.html">contact</a>
+		<a href="https://boardifylifestyle.blogspot.com/">blog</a>
+		
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+
+    <div class="box">
+        <span></span>
+        	<a href="file:///C:/Users/SOLOMON/Desktop/byt%203/BYT/occassion2.html" class="button"><h2>BYT</h2></a>
+
+    </div>
+	
+	
+	
+	
+</body>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: jokerman;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+	background-image: url('bg1.jpg');
+	
+
+}
+
+Date(){
+	color; #ff6699;
+}
+
+.box {
+    position: relative;
+    width: 450px;
+    height: 250px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+	margin-top: 300px;
+    align-items: center;
+    overflow: hidden;
+	box-shadow:
+		0 0 12px #66ff00,
+		0 0 19px #cccc00,
+		0 0 29px #ff6699,
+		0 0 40px #33ffff;
+
+}
+
+.header{
+    position: fixed;
+    top:1.5rem; left:50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 95%;
+    background: var(--background);
+    border:var(--border);
+    border-top:var(--border-top);
+    border-left:var(--border-left);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:
+		0 0 2px #ffff00,
+		0 0 15px #00ff00,
+		0 0 8px #993300,
+		0 0 14px #33ffff;
+    padding:2rem;
+    border-radius: 50px;
+    backdrop-filter: blur(.4rem);
+}
+.pic{
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 100px;
+}
+
+.header .logo{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: #ffffff;
+	 text-shadow:
+		0 0 11px #ff0000,
+		0 0 15px #33ffff,
+		0 0 10px #ffff00,
+		0 0 12px #660000;
+    text-transform: lowercase;
+}
+
+.header .logo i{
+    color: #fff000;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: #ff0000;
+	 text-shadow:
+		0 0 11px #ffff00,
+		0 0 15px #ffffff,
+		0 0 10px #ffff00,
+		0 0 12px #660000;
+}
+
+.header .navbar a:hover{
+    color: #660000;
+	text-transform: rotate(360deg);
+}
+
+#menu-btn{
+    font-size: 3rem;
+    cursor: pointer;
+    color:var(--white);
+    display: none;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,
+    transparent,transparent, #ff0000);
+    animation: animate 4s linear infinite;
+}
+.box::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,
+    transparent,transparent, #33ff00);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+}
+@keyframes animate {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box span{
+    position: absolute;
+    inset: 5px;
+    border-radius:16px ;
+    background: #0c1022;
+    z-index: 1;
+}
+.box h2{
+    position: relative;
+    z-index: 2;
+    font-size: 10em;
+	color: rgba(255, 255, 255, 0);
+	text-shadow:
+		0 0 2px #ff6600,
+		0 0 15px #ff0033,
+		0 0 20px #993300,
+		0 0 40px #33ffff;
+}
+</style>
+</html>
